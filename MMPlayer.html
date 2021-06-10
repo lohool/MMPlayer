@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="js/hls.js"></script>
+     <script src="js/MMPLayer.js"></script>
+     <link type="text/css" rel="stylesheet" href="css/MMPLayer.css" />
+     <script>
+         $(function (){
+
+				 var player=new MMPlayer({
+					 video:[['http://localhost:9001/seg/mini_seg.m3u8',60], ['http://localhost:9001/m/0.mp4',94],['http://localhost:9001/m/2.mp4',62], ['http://localhost:9001/m/3.mp4',59]],
+					 container:'MMPLayer',
+					 autoPlay:true
+				 });
+
+			  });
+
+         })
+     </script>
+ </head>
+ <body>
+        <div  id="MMPLayer" style="width:800px;height:500px"></div>
+
+ </body>
+</html>

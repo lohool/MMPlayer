@@ -1,0 +1,126 @@
+.MMPlayer{
+    border: 0px solid #000;
+    background: #000000;
+    position: relative;
+}
+.MMPlayer video{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.MMPlayer .MMPlayer_playing{
+    display: inline;
+}
+
+.MMPlayer .MMPlayer_preload{
+    display: none;
+}
+
+.MMPlayer video span{
+    white-space:pre
+}
+.MMPlayer .MMPlayer_controls{
+    width: 100%;
+    /*background:rgb(0.3,0,0);*/
+    position:relative;
+    bottom:50px;
+    height:44px;
+    margin: 0 auto;
+    color:white;
+    font-weight: 500;
+    font-size: 18px;
+    #padding-bottom:4px;
+}
+
+.MMPlayer_controls .progressWrap{
+    background-color: #EBE8E8;
+    height: 10px;
+    cursor: pointer;
+    border-right: 0px solid blue;
+    width:95%;
+    position:relative;
+    margin: 0 auto;
+    opacity: 75%;
+}
+.MMPlayer_controls .playProgress{
+    background-color: rgb(114, 223, 255);
+    width: 0px;
+    height: 100%;
+}
+.MMPlayer_controls .showProgress{
+    /*background-color: ;*/
+    /*line-height: 60px;*/
+}
+.MMPlayer_controls .videoControl{
+    width:95%;
+    margin: 5px auto;
+}
+
+.MMPlayer .video_play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10%;
+    height: 15%;
+    z-index: 999;
+    background: url(../imgs/play2.svg);
+    background-size: 100% 100%;
+    cursor:pointer
+}
+
+.MMPlayer .video_pause{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10%;
+    #height: 15%;
+    z-index: 999;
+    background: url(../imgs/pause.svg) no-repeat;
+    background-size: 100% 100%;
+    cursor:pointer
+}
+
+/*按钮样式*/
+.MMPlayer_controls .videoButton{
+    line-height: 25px;
+    float:right;
+    width: 20%;
+    text-align: right;
+}
+
+.videoButton div{
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.MMPlayer .pauseBtn{
+    background: url("../imgs/pause.svg");
+    background-size: 100% 100%;
+	width:24px;
+	height:24px;
+    margin-right: 4px;
+}
+
+.MMPlayer .playBtn{
+    background: url("../imgs/play2.svg");
+    background-size: 100% 100%;
+	width:24px;
+	height:24px;
+    margin-right: 4px;
+}
+
+.MMPlayer .fullScreenBtn{
+    background: url("../imgs/fullscreen2.svg");
+    background-size: 100% 100%;
+	width:24px;
+	height:24px;
+    margin-right: 0;
+}
